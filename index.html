@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+        </style>
+</head>
+<body>
+    <div class="main-body">
+        <h1>CalcMaster</h1>
+        <h3>A powerful and authoritative tool for all your calculation needs</h3>
+       <div class="outer">
+        <input type="text" id="text-box" readonly>
+        <div class="inner">
+            <button class="btn btn1" onclick="
+                result=''
+                document.querySelector('#text-box').value=result">C</button>
+            <button class="btn btn1" onclick="
+            result+='%'
+            document.querySelector('#text-box').value=result">%</button>
+            <button class="btn btn1" onclick="
+            result=result.slice(0,-1)
+            document.querySelector('#text-box').value=result"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="btn btn1" onclick="
+            result+='/'
+            document.querySelector('#text-box').value=result"><i class="fa-solid fa-divide"></i></button>
+            <button class="btn" onclick="
+            result+=7
+            document.querySelector('#text-box').value=result">7</button>
+            <button class="btn" onclick="
+            result+=8
+            document.querySelector('#text-box').value=result">8</button>
+            <button class="btn" onclick="
+            result+=9
+            document.querySelector('#text-box').value=result">9</button>
+            <button class="btn btn1" onclick="
+            result+='*'
+            document.querySelector('#text-box').value=result">x</button>
+            <button class="btn" onclick="
+            result+=4
+            document.querySelector('#text-box').value=result">4</button>
+            <button class="btn" onclick="
+            result+=5
+            document.querySelector('#text-box').value=result">5</button>
+            <button class="btn" onclick="
+            result+=6
+            document.querySelector('#text-box').value=result">6</button>
+            <button class="btn btn1" onclick="
+            result+='-'
+            document.querySelector('#text-box').value=result">-</button>
+            <button class="btn" onclick="
+            result+=1
+            document.querySelector('#text-box').value=result">1</button>
+            <button class="btn" onclick="
+            result+=2
+            document.querySelector('#text-box').value=result">2</button>
+            <button class="btn" onclick="
+            result+=3
+            document.querySelector('#text-box').value=result">3</button>
+            <button class="btn btn1" onclick="
+            result+='+'
+            document.querySelector('#text-box').value=result">+</button>
+            <button class="btn" onclick="
+            result+='00'
+            document.querySelector('#text-box').value=result">00</button>
+            <button class="btn" onclick="
+            result+=0
+            document.querySelector('#text-box').value=result">0</button>
+            <button class="btn" onclick="
+            result+='.'
+            document.querySelector('#text-box').value=result"><b>.</b></button>
+            <button class="btn btn3" onclick="
+            result=String(eval(result))
+            document.querySelector('#text-box').value=result">=</button>
+        </div>
+       </div>
+       <p>Made By Akshit Wadhwa</p>
+    </div>
+       <script>
+        let result='';
+        document.querySelector('#text-box').value = result;
+       </script>
+</body>
+</html>
